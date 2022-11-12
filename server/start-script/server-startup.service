@@ -1,0 +1,8 @@
+[Unit]
+Description: Service to Launch Fastapi server
+
+[Service]
+ExecStart=/usr/bin/server-startup.sh
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,208 @@
+abingigo@abingigo:~/Desktop$ python3 client.py
+[12/11/2022 21:59:25] CLIENT: STARTING IN LOW MODE
+Starting Thread-1
+Starting Thread-2
+Starting Thread-3
+Starting Thread-4
+Starting Thread-5
+Thread-3 Log: Fibonacci(15) = 610   |   Server: vm1  |   Response Time: 0.050587
+Exiting Thread-3
+Thread-2 Log: Fibonacci(17) = 1597   |   Server: vm1  |   Response Time: 0.052384
+Exiting Thread-2
+Thread-1 Log: Fibonacci(25) = 75025   |   Server: vm1  |   Response Time: 0.054759
+Exiting Thread-1
+Thread-4 Log: Fibonacci(16) = 987   |   Server: vm1  |   Response Time: 0.057074
+Exiting Thread-4
+Thread-5 Log: Fibonacci(18) = 2584   |   Server: vm1  |   Response Time: 0.056716
+Exiting Thread-5
+Starting Launching Listener Thread
+Starting Launched Listener Thread
+[12/11/2022 21:59:35] : CLIENT MOVING TO HIGH MODE
+Starting Group-1 Thread-1
+Starting Group-1 Thread-2
+Starting Group-1 Thread-3
+Starting Group-1 Thread-4
+Starting Group-1 Thread-5
+Group-1 Thread-1 Log: Fibonacci(33) = 3524578   |   Server: vm1  |   Response Time: 1.397554
+Exiting Group-1 Thread-1
+Group-1 Thread-2 Log: Fibonacci(32) = 2178309   |   Server: vm1  |   Response Time: 2.227549
+Exiting Group-1 Thread-2
+Starting Group-2 Thread-1
+Starting Group-2 Thread-2
+Starting Group-2 Thread-3
+Starting Group-2 Thread-4
+Starting Group-2 Thread-5
+connection accepted from('127.0.0.1', 58668)
+RECIEVED MESSAGE FROM AUTOSCALER: VM Overloaded, waiting for scaling
+Exiting Launching Listener Thread
+Group-1 Thread-3 Log: Fibonacci(32) = 2178309   |   Server: vm1  |   Response Time: 4.507072
+Exiting Group-1 Thread-3
+Group-1 Thread-4 Log: Fibonacci(31) = 1346269   |   Server: vm1  |   Response Time: 4.505224
+Exiting Group-1 Thread-4
+Group-1 Thread-5 Log: Fibonacci(32) = 2178309   |   Server: vm1  |   Response Time: 4.503209
+Exiting Group-1 Thread-5
+Group-2 Thread-4 Log: Fibonacci(32) = 2178309   |   Server: vm1  |   Response Time: 5.17812
+Exiting Group-2 Thread-4
+Group-2 Thread-1 Log: Fibonacci(30) = 832040   |   Server: vm1  |   Response Time: 5.185123
+Exiting Group-2 Thread-1
+Group-2 Thread-3 Log: Fibonacci(30) = 832040   |   Server: vm1  |   Response Time: 5.187568
+Exiting Group-2 Thread-3
+Group-2 Thread-2 Log: Fibonacci(33) = 3524578   |   Server: vm1  |   Response Time: 5.189284
+Exiting Group-2 Thread-2
+Group-2 Thread-5 Log: Fibonacci(31) = 1346269   |   Server: vm1  |   Response Time: 5.195259
+Exiting Group-2 Thread-5
+connection accepted from('127.0.0.1', 35508)
+RECIEVED MESSAGE FROM AUTOSCALER: VM Launched
+Exiting Launched Listener Thread
+Starting Group-3 Thread-1
+Starting Group-3 Thread-2
+Starting Group-3 Thread-4
+Starting Group-3 Thread-3
+Starting Group-3 Thread-5
+Group-3 Thread-2 Log: Fibonacci(32) = 2178309   |   Server: vm1  |   Response Time: 0.825697
+Exiting Group-3 Thread-2
+Group-3 Thread-1 Log: Fibonacci(33) = 3524578   |   Server: vm1  |   Response Time: 2.174928
+Exiting Group-3 Thread-1
+Starting Group-4 Thread-1
+Starting Group-4 Thread-2
+Starting Group-4 Thread-3
+Starting Group-4 Thread-4
+Starting Group-4 Thread-5
+Group-3 Thread-3 Log: Fibonacci(31) = 1346269   |   Server: vm1  |   Response Time: 3.536342
+Exiting Group-3 Thread-3
+Group-3 Thread-5 Log: Fibonacci(30) = 832040   |   Server: vm1  |   Response Time: 3.536491
+Exiting Group-3 Thread-5
+Group-3 Thread-4 Log: Fibonacci(31) = 1346269   |   Server: vm1  |   Response Time: 3.538794
+Exiting Group-3 Thread-4
+Group-4 Thread-2 Log: Fibonacci(32) = 2178309   |   Server: vm2  |   Response Time: 0.943686
+Exiting Group-4 Thread-2
+Group-4 Thread-3 Log: Fibonacci(30) = 832040   |   Server: vm1  |   Response Time: 1.535919
+Exiting Group-4 Thread-3
+Group-4 Thread-4 Log: Fibonacci(31) = 1346269   |   Server: vm1  |   Response Time: 1.52532
+Exiting Group-4 Thread-4
+Group-4 Thread-1 Log: Fibonacci(32) = 2178309   |   Server: vm2  |   Response Time: 1.847643
+Exiting Group-4 Thread-1
+Group-4 Thread-5 Log: Fibonacci(32) = 2178309   |   Server: vm2  |   Response Time: 2.654772
+Exiting Group-4 Thread-5
+Starting Group-5 Thread-1
+Starting Group-5 Thread-2
+Starting Group-5 Thread-4
+Starting Group-5 Thread-3
+Starting Group-5 Thread-5
+Group-5 Thread-4 Log: Fibonacci(31) = 1346269   |   Server: vm2  |   Response Time: 0.6107
+Exiting Group-5 Thread-4
+Group-5 Thread-1 Log: Fibonacci(32) = 2178309   |   Server: vm1  |   Response Time: 0.940798
+Exiting Group-5 Thread-1
+Group-5 Thread-2 Log: Fibonacci(31) = 1346269   |   Server: vm1  |   Response Time: 1.44858
+Exiting Group-5 Thread-2
+Starting Group-6 Thread-1
+Starting Group-6 Thread-2
+Starting Group-6 Thread-3
+Starting Group-6 Thread-4
+Starting Group-6 Thread-5
+Group-5 Thread-3 Log: Fibonacci(32) = 2178309   |   Server: vm1  |   Response Time: 3.715151
+Exiting Group-5 Thread-3
+Group-5 Thread-5 Log: Fibonacci(33) = 3524578   |   Server: vm1  |   Response Time: 3.714499
+Exiting Group-5 Thread-5
+Group-6 Thread-1 Log: Fibonacci(32) = 2178309   |   Server: vm2  |   Response Time: 0.974443
+Exiting Group-6 Thread-1
+Group-6 Thread-5 Log: Fibonacci(30) = 832040   |   Server: vm2  |   Response Time: 1.965068
+Exiting Group-6 Thread-5
+Group-6 Thread-3 Log: Fibonacci(31) = 1346269   |   Server: vm2  |   Response Time: 1.970392
+Exiting Group-6 Thread-3
+Group-6 Thread-2 Log: Fibonacci(30) = 832040   |   Server: vm1  |   Response Time: 2.60181
+Exiting Group-6 Thread-2
+Group-6 Thread-4 Log: Fibonacci(33) = 3524578   |   Server: vm1  |   Response Time: 2.598819
+Exiting Group-6 Thread-4
+Starting Group-7 Thread-1
+Starting Group-7 Thread-2
+Starting Group-7 Thread-3
+Starting Group-7 Thread-4
+Starting Group-7 Thread-5
+Group-7 Thread-5 Log: Fibonacci(30) = 832040   |   Server: vm1  |   Response Time: 0.43694
+Exiting Group-7 Thread-5
+Group-7 Thread-1 Log: Fibonacci(32) = 2178309   |   Server: vm2  |   Response Time: 1.043433
+Exiting Group-7 Thread-1
+Group-7 Thread-2 Log: Fibonacci(33) = 3524578   |   Server: vm2  |   Response Time: 2.489738
+Exiting Group-7 Thread-2
+Starting Group-8 Thread-1
+Starting Group-8 Thread-2
+Starting Group-8 Thread-3
+Starting Group-8 Thread-4
+Starting Group-8 Thread-5
+Group-8 Thread-1 Log: Fibonacci(31) = 1346269   |   Server: vm1  |   Response Time: 0.596318
+Exiting Group-8 Thread-1
+Group-8 Thread-3 Log: Fibonacci(30) = 832040   |   Server: vm1  |   Response Time: 0.935842
+Exiting Group-8 Thread-3
+Group-7 Thread-4 Log: Fibonacci(32) = 2178309   |   Server: vm2  |   Response Time: 4.767728
+Exiting Group-7 Thread-4
+Group-7 Thread-3 Log: Fibonacci(33) = 3524578   |   Server: vm2  |   Response Time: 4.770881
+Exiting Group-7 Thread-3
+Group-8 Thread-2 Log: Fibonacci(30) = 832040   |   Server: vm2  |   Response Time: 2.921407
+Exiting Group-8 Thread-2
+Group-8 Thread-5 Log: Fibonacci(31) = 1346269   |   Server: vm2  |   Response Time: 2.914156
+Exiting Group-8 Thread-5
+Group-8 Thread-4 Log: Fibonacci(30) = 832040   |   Server: vm2  |   Response Time: 2.915754
+Exiting Group-8 Thread-4
+Starting Group-9 Thread-1
+Starting Group-9 Thread-2
+Starting Group-9 Thread-3
+Starting Group-9 Thread-4
+Starting Group-9 Thread-5
+Group-9 Thread-4 Log: Fibonacci(32) = 2178309   |   Server: vm2  |   Response Time: 0.937874
+Exiting Group-9 Thread-4
+Group-9 Thread-1 Log: Fibonacci(32) = 2178309   |   Server: vm1  |   Response Time: 0.963786
+Exiting Group-9 Thread-1
+Group-9 Thread-3 Log: Fibonacci(30) = 832040   |   Server: vm1  |   Response Time: 1.789319
+Exiting Group-9 Thread-3
+Group-9 Thread-2 Log: Fibonacci(31) = 1346269   |   Server: vm1  |   Response Time: 1.790966
+Exiting Group-9 Thread-2
+Group-9 Thread-5 Log: Fibonacci(32) = 2178309   |   Server: vm1  |   Response Time: 2.611131
+Exiting Group-9 Thread-5
+Starting Group-10 Thread-1
+Starting Group-10 Thread-2
+Starting Group-10 Thread-3
+Starting Group-10 Thread-4
+Starting Group-10 Thread-5
+Group-10 Thread-5 Log: Fibonacci(31) = 1346269   |   Server: vm2  |   Response Time: 0.550686
+Exiting Group-10 Thread-5
+Group-10 Thread-2 Log: Fibonacci(31) = 1346269   |   Server: vm1  |   Response Time: 0.855963
+Exiting Group-10 Thread-2
+Group-10 Thread-1 Log: Fibonacci(30) = 832040   |   Server: vm1  |   Response Time: 0.858653
+Exiting Group-10 Thread-1
+Group-10 Thread-3 Log: Fibonacci(33) = 3524578   |   Server: vm1  |   Response Time: 2.198075
+Exiting Group-10 Thread-3
+Group-10 Thread-4 Log: Fibonacci(31) = 1346269   |   Server: vm1  |   Response Time: 2.71864
+Exiting Group-10 Thread-4
+Starting Group-11 Thread-1
+Starting Group-11 Thread-2
+Starting Group-11 Thread-3
+Starting Group-11 Thread-5
+Starting Group-11 Thread-4
+Group-11 Thread-3 Log: Fibonacci(30) = 832040   |   Server: vm1  |   Response Time: 0.336204
+Exiting Group-11 Thread-3
+Group-11 Thread-1 Log: Fibonacci(31) = 1346269   |   Server: vm2  |   Response Time: 0.57137
+Exiting Group-11 Thread-1
+Group-11 Thread-5 Log: Fibonacci(32) = 2178309   |   Server: vm2  |   Response Time: 1.452855
+Exiting Group-11 Thread-5
+Group-11 Thread-2 Log: Fibonacci(32) = 2178309   |   Server: vm1  |   Response Time: 2.564657
+Exiting Group-11 Thread-2
+Group-11 Thread-4 Log: Fibonacci(33) = 3524578   |   Server: vm1  |   Response Time: 2.563458
+Exiting Group-11 Thread-4
+Starting Group-12 Thread-1
+Starting Group-12 Thread-2
+Starting Group-12 Thread-3
+Starting Group-12 Thread-5
+Starting Group-12 Thread-4
+Group-12 Thread-1 Log: Fibonacci(32) = 2178309   |   Server: vm2  |   Response Time: 0.931081
+Exiting Group-12 Thread-1
+Group-12 Thread-4 Log: Fibonacci(30) = 832040   |   Server: vm2  |   Response Time: 1.271884
+Exiting Group-12 Thread-4
+Group-12 Thread-2 Log: Fibonacci(33) = 3524578   |   Server: vm1  |   Response Time: 1.467963
+Exiting Group-12 Thread-2
+Group-12 Thread-3 Log: Fibonacci(31) = 1346269   |   Server: vm1  |   Response Time: 2.805417
+Exiting Group-12 Thread-3
+Group-12 Thread-5 Log: Fibonacci(32) = 2178309   |   Server: vm1  |   Response Time: 2.802378
+Exiting Group-12 Thread-5
+Exiting Main Thread
+abingigo@abingigo:~/Desktop$
