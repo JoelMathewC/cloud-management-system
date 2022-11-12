@@ -21,6 +21,10 @@ class ClientThread (threading.Thread):
         self.api = api
 
     def run(self):
+        '''
+            Makes a request to the backend and 
+            prints the result to the screen
+        '''
         print("Starting " + self.name)
 
         response = requests.get(f"{self.api}")
@@ -41,6 +45,10 @@ class ListenerThread (threading.Thread):
         self.port = port
 
     def run(self):
+        '''
+            Listens at a particular port for a message and manupilates 
+            certain global variables based on those messages
+        '''
         print("Starting " + self.name)
 
         global launchingVMFlag
@@ -67,6 +75,10 @@ class ListenerThread (threading.Thread):
 
 
 def low_mode():
+    '''
+        Low mode client that generates a small amount of 
+        requests that does not overload the VM
+    '''
     threadList = []
     num_threads = 5
     random.seed(datetime.now())
@@ -83,6 +95,10 @@ def low_mode():
         thread.start()
 
 def high_mode():
+    '''
+        High mode client that generates a large number 
+        of requests and overloads the VM
+    '''
     num_threads = 5
     num_grps = 12
     global launchingVMFlag

@@ -5,6 +5,11 @@ from datetime import datetime
 from multiprocessing.connection import Client
 
 def sendMessage(message, port):
+	'''
+		Input: 
+			message: string to be sent
+			port: port to send message via
+	'''
 	address = ('localhost', port)
 	conn = Client(address, authkey=b'secret password')
 	conn.send(message)
@@ -12,6 +17,15 @@ def sendMessage(message, port):
 
 
 def getCpustats(dom,domainName,intervalTime):
+	'''
+		Input:
+			dom: Domain handler for a particular domain
+			domainName: Name of domain being handled by dom
+			intervalTime: Interval time between which CPU time is recorded
+
+		Output: integer representing the percentage of CPU 
+		being used by the domain passed as input
+	'''
 	cpu_stats1 = dom.getCPUStats(False)
 	time.sleep(intervalTime)
 	cpu_stats2 = dom.getCPUStats(False)
@@ -25,6 +39,12 @@ def getCpustats(dom,domainName,intervalTime):
 	return stats
 	
 def launchVM(dom):
+	'''
+		Input: 
+			dom: Domain handler for a particular domain
+		
+		Launches a VM and throws an error and halts if it is unable to.
+	'''
 	try:
 		dom.create()
 	except libvirt.libvirtError:
@@ -32,6 +52,12 @@ def launchVM(dom):
 		sys.exit(1)
 
 def connectToVM(domName):
+	'''
+		Input:
+			domName: Name of domain being handled by dom
+		
+		Connect to a domain, throws an error and halts if it is unable to.
+	'''
 	dom = conn.lookupByName(domName)
 	if dom == None:
  		print('Failed to find the domain '+domName, file=sys.stderr)
