@@ -4,7 +4,27 @@ This project is done as a part of the S7 B.Tech Cloud Computing course from NITC
 The project focuses on building a cloud management system in python that autoscales to spawn a new VM when the current VM is overloaded. This project considers the case of scale up from one server to two. The folder structure of the project is as follows
 
 ```
-FOLDER STRUCTURE
+.
+├── README.md
+├── client
+│   └── client.py
+├── cms
+│   └── autoscaler.py
+├── output-log
+│   ├── README.md
+│   ├── autoscaler-log.txt
+│   ├── client-log.txt
+│   └── plots
+│       ├── log-plot.png
+│       └── plot-logs.py
+└── server
+    ├── backend
+    │   ├── README.md
+    │   └── main.py
+    └── start-script
+        ├── README.md
+        ├── server-startup.service
+        └── server-startup.sh
 ```
 ## Setup
 This project used Lubuntu as the operating system on the host and child VMs. The steps involved in the setup are as follows
@@ -26,17 +46,5 @@ The client is a multi-threaded application that makes multiple requests to the g
 
 The client also talks to the autoscaler via sockets to get information on if a new VM has been launched. The client randomly chooses from a list of available API endpoints to make backend calls to. When a new VM is spawned its endpoint is added to the list of available API endpoints. 
 
-### Logging
-The following details are logged by the client
-1. Start and end of a thread
-2. The result of the backend along with name of the VM that returned the result.
-3. Messages received from the autoscaler
-
-
 ## Autoscaler
 The Autoscaler keeps track of the CPU statistics of vm1. When the CPU stats cross the threshold of 75 it triggers the launching of vm2. When vm2 has finished launching the autoscaler informs the client program of the same via sockets. The launching of VMs and retrieval of CPU statistics is done entirely using the libvirt API.
-
-### Logging
-The following details are logged by the autoscaler
-1. CPU usage for each VM along with a time stamp
-2. Logging of when a new VM is launched
